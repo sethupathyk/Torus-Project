@@ -1,0 +1,48 @@
+#btc {
+    background-color: bisque;
+}
+#eth {
+    background-color: aquamarine;
+}
+#dgc {
+    background-color: lightcoral;
+}
+#pkd {
+    background-color: coral;
+}
+#bnc {
+    background-color: darkseagreen;
+}
+
+h2 {
+    cursor: pointer;
+    margin: 65px;
+    width: 140px;
+    text-align: center;
+    border:solid 3px white;
+}
+
+.container {
+    margin: auto;
+    width: 25%;
+    padding: 40px;
+}
+
+.wrap {
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    width: 70px;
+    height: 35px;
+    font-weight: bold;
+    border: solid 3px white;
+}

@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="content">
+    <div class="logo">
+      <img src="images/logo.svg" alt="" />
+    </div>
+    <div class="image"></div>
+    <div class="text">
+      Welcome to Torus Digital Private Limited <br />
+      Login to see offers today !!
+    </div>
+  </div>
+  <form id="form" [formGroup]="loginForm" (ngSubmit)="login()">
+    <img class="img-torus" src="http://www.realwire.com/writeitfiles/Torus_logo.jpg" alt="company-logo" />
+    <div class="social">
+      <div class="title">Welcome Back</div>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <i class="far fa-envelope"></i>
+      <input type="email" formControlName="email" id="email" placeholder="abc@gmail.com" />
+      <span style="color: red; font-size: small;" *ngIf="email && email.invalid && email.touched">Enter the vaild email!!</span>
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+
+
+
+    <div>
+      <label for="password">Password</label>
+      <i class="fas fa-lock"></i>
+      <input type="password" formControlName="password" id="password" placeholder="Password here" />
+      <span style="color: red; font-size: small" *ngIf="password && password.invalid && password.touched">Password is incorrect!!</span>
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+
+    <button type="submit" id="submit" >Login</button> <br />
+
+    <div class="or">Or</div>
+
+    <div class="question">
+      Don't have an Account? <br />
+      <a routerLink="/signup">Sign Up</a>
+    </div>
+
+
+  </form>
+</div>
